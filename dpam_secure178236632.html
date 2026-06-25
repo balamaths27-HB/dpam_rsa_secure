@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DPAM-RSA Spectral Secure Messaging System</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.25.0/full/pyodide.js"></script>
+    <style>
+        /* High-attraction premium glass panels with integrated neon glow vectors */
+        .sender-glass {
+            background: linear-gradient(135deg, rgba(16, 24, 48, 0.85) 0%, rgba(7, 11, 24, 0.95) 100%);
+            border: 1px solid rgba(59, 130, 246, 0.25);
+            box-shadow: 0 20px 40px -15px rgba(7, 11, 24, 0.9), inset 0 1px 1px rgba(255, 255, 255, 0.05);
+        }
+        .sender-glass:hover {
+            border-color: rgba(59, 130, 246, 0.5);
+            box-shadow: 0 0 30px -5px rgba(59, 130, 246, 0.15);
+        }
+        
+        .receiver-glass {
+            background: linear-gradient(135deg, rgba(12, 32, 28, 0.85) 0%, rgba(4, 15, 13, 0.95) 100%);
+            border: 1px solid rgba(16, 185, 129, 0.25);
+            box-shadow: 0 20px 40px -15px rgba(4, 15, 13, 0.9), inset 0 1px 1px rgba(255, 255, 255, 0.05);
+        }
+        .receiver-glass:hover {
+            border-color: rgba(16, 185, 129, 0.5);
+            box-shadow: 0 0 30px -5px rgba(16, 185, 129, 0.15);
+        }
+        
+        @keyframes techRotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .animate-tech-spin {
+            animation: techRotate 25s linear infinite;
+            transform-origin: center;
+        }
+    </style>
+</head>
+<body class="bg-[#02040a] text-slate-100 min-h-screen flex flex-col justify-between font-sans selection:bg-amber-500/30 selection:text-amber-200 relative">
+
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-yellow-500/5 rounded-full blur-3xl pointer-events-none"></div>
+
+    <header class="text-center py-10 border-b border-slate-900/60 bg-slate-950/40 backdrop-blur-md relative overflow-hidden flex flex-col items-center justify-center">
+        
+        <div class="mb-4 relative group">
+            <div class="absolute inset-0 bg-gradient-to-tr from-amber-500 via-yellow-500 to-orange-500 rounded-full blur-2xl opacity-25 group-hover:opacity-45 transition-opacity duration-700"></div>
+            
+            <div class="relative p-2 bg-[#060b13] border border-amber-500/30 rounded-full shadow-2xl shadow-amber-500/10 flex items-center justify-center backdrop-blur-xl">
+                <svg width="60" height="60" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="drop-shadow-[0_0_12px_rgba(245,158,11,0.6)]">
+                    <g class="animate-tech-spin">
+                        <circle cx="50" cy="50" r="44" stroke="url(#goldGrad)" stroke-width="1" stroke-dasharray="2 10" opacity="0.4"/>
+                        <circle cx="50" cy="50" r="38" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="15 30 5 10" opacity="0.6"/>
+                        <circle cx="50" cy="6" r="3" fill="#fbbf24"/>
+                        <circle cx="50" cy="94" r="3" fill="#fbbf24"/>
+                        <circle cx="6" cy="50" r="3" fill="#f59e0b"/>
+                        <circle cx="94" cy="50" r="3" fill="#f59e0b"/>
+                        <circle cx="18" cy="18" r="2" fill="#d97706"/>
+                        <circle cx="82" cy="82" r="2" fill="#d97706"/>
+                        <circle cx="82" cy="18" r="2" fill="#d97706"/>
+                        <circle cx="18" cy="82" r="2" fill="#d97706"/>
+                    </g>
+                    
+                    <path d="M50 16L78 28V52C78 70 66 82 50 85C34 82 22 70 22 52V28L50 16Z" fill="url(#coreFill)" stroke="url(#goldGrad)" stroke-width="3" stroke-linejoin="round
