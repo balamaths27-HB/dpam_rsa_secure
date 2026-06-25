@@ -1,2 +1,2 @@
-# dpam_RSA
+# dpam_rsa
 Secure Message Service
